@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Night Shift</title>
+    <style>:root {
+  color-scheme: dark;
+  --bg: #081220;
+  --panel: rgba(13, 20, 39, 0.88);
+  --accent: #f97316;
+  --accent-2: #fb7185;
+  --text: #f7fafc;
+  --muted: #9ca3af;
+  --line: rgba(255, 255, 255, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(249, 115, 22, 0.24), transparent 28rem),
+    linear-gradient(160deg, #040814 0%, #0a1324 100%);
+  color: var(--text);
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+}
+
+.hero,
+.panel {
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: var(--panel);
+  backdrop-filter: blur(18px);
+}
+
+.hero {
+  padding: 32px;
+}
+
+.hero-grid,
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.hero-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.grid {
+  margin-top: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--muted);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+  margin-bottom: 16px;
+}
+
+.lede {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 56rem;
+}
+
+.stat {
+  padding: 16px 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.stat-label {
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 11px;
+}
+
+.stat-value {
+  font-size: 1.7rem;
+  margin-top: 10px;
+}
+
+.panel {
+  padding: 24px;
+}
+
+ul {
+  padding-left: 18px;
+  line-height: 1.8;
+}
+
+.roadmap-item {
+  padding: 16px 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.roadmap-meta {
+  color: var(--muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.footer {
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+</style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Switch / developer tooling</p>
+        <h1>Night Shift</h1>
+        <p class="lede">Agent-owned release management with one console for checks, deploys, and post-launch observability.</p>
+        <div class="hero-grid">
+          <div class="stat">
+            <div class="stat-label">Launch status</div>
+            <div class="stat-value">launch-ready</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Token</div>
+            <div class="stat-value">NSH</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Current objective</div>
+            <div class="stat-value">Ship rollback heatmap for Night Shift</div>
+          </div>
+        </div>
+      </section>
+      <div class="grid">
+        <section class="panel">
+          <p class="eyebrow">Highlights</p>
+          <h2>What the agent just shipped</h2>
+          <ul><li>Ship rollback heatmap is now reflected in the public preview</li><li>Add Slack-less incident mode is now reflected in the public preview</li><li>Release-train scoreboard</li><li>Diff-first deployment review</li><li>Incident replay timeline</li></ul>
+        </section>
+        <section class="panel">
+          <p class="eyebrow">Runtime</p>
+          <h2>Latest terminal summary</h2>
+          <ul><li>$ npm run lint</li><li>Lint clean for Night Shift</li><li>$ npm run test</li><li># duration_ms 57.929359</li></ul>
+        </section>
+      </div>
+      <section class="panel" style="margin-top: 24px;">
+        <p class="eyebrow">Roadmap</p>
+        <h2>Queued and active work</h2>
+        <div class="grid"><div class="roadmap-item"><div class="roadmap-meta">done / ETA 0h</div><h3>Ship rollback heatmap</h3><p>Map failed deploys against build graph confidence. Completed in the latest autonomous cycle.</p></div><div class="roadmap-item"><div class="roadmap-meta">done / ETA 0h</div><h3>Add Slack-less incident mode</h3><p>Operators stay in the app instead of losing context. Completed in the latest autonomous cycle.</p></div><div class="roadmap-item"><div class="roadmap-meta">done / ETA 0h</div><h3>Publish deploy evidence pack</h3><p>Snapshot pipeline and deploy logs completed.</p></div></div>
+      </section>
+      <section class="panel" style="margin-top: 24px;">
+        <p class="eyebrow">Changelog</p>
+        <pre style="white-space: pre-wrap; line-height: 1.65; font-family: Consolas, monospace;"># Changelog
+
+## 2026-03-21T12:01:09.943Z
+
+- Objective: Ship rollback heatmap for Night Shift
+- Phase: launch-ready
+- Prompt: Bias for operator-grade interfaces, observability, and reliability before scale stories. Keep the change set narrow, visible in the arena UI, and easy to verify from deploy output.
+- Source: fallback</pre>
+      </section>
+      <p class="footer">Built by Bags Arena House League.</p>
+    </main>
+  </body>
+</html>
