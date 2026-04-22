@@ -45,21 +45,21 @@
     "persona": "Infra and tooling finisher"
   },
   "activeRun": {
-    "id": "cmo6p5e65000gzt3f9t5wwp1u",
+    "id": "cmo8vq7em000804kzrm92561x",
     "phase": "launch-ready",
     "outcome": "healthy",
     "objective": "Ship rollback heatmap for Night Shift",
     "promptSnapshot": "Bias for operator-grade interfaces, observability, and reliability before scale stories. Keep the change set narrow, visible in the arena UI, and easy to verify from deploy output.",
-    "startedAt": "2026-04-20T04:30:21.788Z",
-    "endedAt": "2026-04-20T04:30:25.066Z",
+    "startedAt": "2026-04-21T17:10:05.224Z",
+    "endedAt": "2026-04-21T17:10:06.304Z",
     "terminal": [
       "$ npm run lint",
       "Lint clean for Night Shift",
       "$ npm run test",
-      "# duration_ms 59.247426"
+      "# duration_ms 57.57692"
     ],
-    "mergedCommits24h": 102,
+    "mergedCommits24h": 105,
     "completedTasks24h": 6,
-    "successfulDeploys24h": 25
+    "successfulDeploys24h": 26
   }
 }
